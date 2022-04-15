@@ -42,4 +42,14 @@ public class UserEntity {
 
     @Enumerated(EnumType.STRING)
     private Roles role;
+
+    public UserEntity(String firstName, String lastName, String email, String password, Roles role) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password =password;
+        this.role= role;
+    }
+
+
 }
